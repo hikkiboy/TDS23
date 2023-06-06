@@ -25,3 +25,18 @@ WHERE Iddeteste = 1
 
 DROP TABLE TblTeste
 
+CREATE TABLE LAELE (
+	ID int primary key identity,
+	nome varchar(100) not null,
+	dataIN datetime default GETDATE()
+)
+
+SELECT * FROM LAELE
+
+
+INSERT INTO LAELE(nome) values('sena')
+INSERT INTO LAELE(nome) values('Giovanna')
+INSERT INTO LAELE(nome) Values('julio')
+
+
+

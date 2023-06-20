@@ -7,14 +7,16 @@ programa
 		escreva ("numero: ")
 		leia(num)
 
-		se ( num >= 0.3 e num < 0.4 ){
-			escreva ("intimar primeiro grupo")
+		se ( num >= 0 e num <= 0.3 ){
+			escreva ("tudo certo")
+		}senao se (num >= 0 e num >= 0.3) {
+			escreva("intimar o primeiro")
 		}senao se (num >= 0.4 e num < 0.5) {
 			escreva("intimar primeiro e segundo")
 		}senao se (num >= 0.5 ){
 			escreva("todos são intimados")
 		}senao{
-			escreva ("matem")
+			escreva ("a")
 		}
 	}
 }
@@ -23,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 70; 
+ * @POSICAO-CURSOR = 384; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

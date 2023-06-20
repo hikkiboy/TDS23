@@ -3,23 +3,16 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro num
-		escreva ("idade ")
-		leia(num)
-
-		se ( num >= 5 e num <= 7 ){
-			escreva ("Infantil A")
-		}senao se (num >= 8 e num <= 11) {
-			escreva("Infantil B")
-		}senao se (num >= 12 e num <=13 ){
-			escreva("Juvenil A")
-		}senao se (num >= 14 e num <=17){
-			escreva ("Juvenil B")
-		}senao se (num >= 18){
-			escreva("Adultos")
-		}senao{
-			escreva ("não seje burro")
+	inteiro total = 0
+		para(inteiro x = 0; x <= 100; x++){
+			se((x % 2) == 0){
+			escreva(x, " par \n")
+			total += x
+			}senao{
+				escreva(x, " impar \n")
+			}
 		}
+	escreva(total)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +20,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 411; 
+ * @POSICAO-CURSOR = 217; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

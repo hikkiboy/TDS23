@@ -3,18 +3,15 @@ programa
 	
 	funcao inicio()
 	{
-	inteiro contar = 233
+	inteiro x 
+	escreva("numero : ")
+	leia(x)
+	inteiro limite = 0
+	inteiro contador = 0
 		faca{
-			se (contar > 300 e contar < 400){
-				contar = contar + 3
-			escreva (contar, "\n")
-			}senao{
-				contar = contar + 5
-				escreva (contar, "\n")
-			}
-			
-		}enquanto (contar < 456)
-		
+			limite++
+			contador += limite 
+		} enquanto( limite < x ) escreva(contador, "\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,9 +19,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 250; 
+ * @POSICAO-CURSOR = 223; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {limite, 9, 9, 6}-{contador, 10, 9, 8};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

@@ -23,6 +23,7 @@ public class exercicio3 {
 		System.out.println("total : " + total);
 		System.out.println("quantidade : " + quant);
 		System.out.println("media : " + media);
+		input.close();
 	}
 
 }

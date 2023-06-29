@@ -17,7 +17,6 @@ public class FaltasNotas {
 		double Pnota = 0;
 		double Snota = 0;
 		String op = " ";
-		
 		System.out.println("Codigo\t\tNota1\t\tNota2\t\tFaltas\t\tAlunos");
 		
 		for (int i = 0; i < Alunos.length; i++) {
@@ -41,6 +40,7 @@ public class FaltasNotas {
 				}
 			else {
 				System.out.println("Coloca direito o codigo.");
+				break;
 			}
 		
 		}
@@ -49,8 +49,8 @@ public class FaltasNotas {
 			System.out.println(Cod[i]+"\t\t"+Nota1[i]+"\t\t"+Nota2[i]+"\t\t"+Falta[i]+"\t\t"+Alunos[i]+"\n");
 		}
 		System.out.println("Quer adicionar mais? : ");
-		op = input.next();
-		while(op.equals("S")) {
+		op = input.next().toUpperCase();
+		while(op.equals("S") || op.equals("SIM")) {
 			System.out.println("Insira o Cod do aluno: ");
 			Codig = input.nextLine();
 			for(int y = 0; y < Alunos.length; y++) {	

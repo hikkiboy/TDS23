@@ -1,4 +1,4 @@
-package App;
+package lista4;
 
 import java.util.Scanner;
 

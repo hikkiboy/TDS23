@@ -1,6 +1,6 @@
-package entities;
+package lista4;
 
-public class Pessoa {
+public class Cliente {
 	
 	private String Nome;
 	private int DataNasc;
@@ -9,7 +9,7 @@ public class Pessoa {
 	
 	
 	
-	public Pessoa(String nome, int dataNasc, String cpf, boolean vivo) {
+	public Cliente(String nome, int dataNasc, String cpf, boolean vivo) {
 		super();
 		Nome = nome;
 		DataNasc = dataNasc;

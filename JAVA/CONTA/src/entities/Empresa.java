@@ -2,6 +2,8 @@ package entities;
 
 public class Empresa extends Conta {
 	
+	//Feito pelo Gustav
+	
 	private double emprestimoEmpresa;
 	private double limiteEmprestimo = 10000.00;
 

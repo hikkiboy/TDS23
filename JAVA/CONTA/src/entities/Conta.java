@@ -71,7 +71,14 @@ public abstract class Conta {
 		}
 	}
 	public void credito(double saldoF) {
+
+		if(saldoF >= 0) {
 		this.saldo = this.saldo + saldoF;
+		}
+		else
+		{
+			System.out.println("Coloque um valor válido");
+		}
 	}
 	
 }

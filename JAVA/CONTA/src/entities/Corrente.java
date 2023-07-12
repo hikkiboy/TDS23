@@ -18,7 +18,6 @@ public class Corrente extends Conta {
 		if(quantTalao <= contadorTalao && quantTalao>0) {
 		this.contadorTalao =- quantTalao;
 		this.credito(30.00 * quantTalao);
-		System.out.println("O valor no seu saldo é " + this.getSaldo() );
 		}
 		else {
 			System.out.println("Digite um valor válido");

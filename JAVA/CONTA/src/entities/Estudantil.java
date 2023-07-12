@@ -2,7 +2,7 @@ package entities;
 import java.util.Scanner;
 public class Estudantil extends Conta{
 	Scanner read = new Scanner(System.in);
-	private double limiteEstudantil = 5000.00;
+	private double limiteEstudantil = 5.000;
 
 	public Estudantil(int numero, String cpf, double limiteEstudantil) {
 		super(numero, cpf);
@@ -23,11 +23,7 @@ public class Estudantil extends Conta{
 
 
 
-	public void usarEstudantil(){
-		
-		double valorEstudantil;
-		System.out.println("insira quanto vamos descontar.");
-		valorEstudantil = read.nextDouble();
+	public void usarEstudantil(double valorEstudantil){
 	
 		if(this.limiteEstudantil > valorEstudantil) 
 		{
@@ -38,7 +34,6 @@ public class Estudantil extends Conta{
 		else
 		{
 			System.out.println("Limite excedido, tente denovo.");
-			usarEstudantil();
 		}
 	}
 }

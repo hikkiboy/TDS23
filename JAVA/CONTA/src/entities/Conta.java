@@ -62,12 +62,16 @@ public abstract class Conta {
 		this.ativo = true;
 	}
 	public void debito(double saldoF) {
+		if(saldoF > this.saldo) {
+			System.out.println("Coloque um valor válido");
+		}else {
 		if(this.saldo >= 0) {
 		this.saldo = this.saldo - saldoF;
 		}
 		else
 		{
 			System.out.println("Coloque um valor válido");
+		}
 		}
 	}
 	public void credito(double saldoF) {

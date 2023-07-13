@@ -52,7 +52,7 @@ public class AppConta {
 			System.out.println("Conta poupança");
 			System.out.println("Saldo atual :"+p1.getSaldo());
 			System.out.println("Movimento : D - Debito, C - Credito");
-			r = input.next();
+			r = input.next().toUpperCase();
 			for(int i = 1; i <= 10; i++) {
 				if(r.equals("D")){
 					if (p1.getSaldo() == 0) {
@@ -69,7 +69,7 @@ public class AppConta {
 				if(i <= 10) {
 				System.out.println("Saldo atual :"+p1.getSaldo());
 				System.out.println("Movimento : D - Debito, C - Credito");
-				r = input.next();
+				r = input.next().toUpperCase().toUpperCase();
 				}
 			}
 			System.out.println("Qual o dia de hj?:  ");
@@ -87,8 +87,8 @@ public class AppConta {
 			for(int i = 1; i <= 10; i++) {
 				if(i <= 10) {
 					System.out.println("Saldo atual :"+c1.getSaldo());
-					System.out.println("Movimento : D - Debito, C - Credito, Sair - Sair");
-					r = input.next();
+					System.out.println("Movimento : D - Debito, C - Credito, SAIR - Sair");
+					r = input.next().toUpperCase();
 					}
 				if(r.equals("D")){
 					if (c1.getSaldo() == 0) {
@@ -102,10 +102,10 @@ public class AppConta {
 					System.out.println("Valor para Credito ");
 					c1.credito(input.nextDouble());
 				}
-				else if(r.equals("Sair")) {
+				else if(r.equals("SAIR")) {
 					System.out.println(c1.getSaldo());
 					System.out.println("Vc quer uns cheques, meu mano?");
-					r = input.next();
+					r = input.next().toUpperCase();
 						if(r.equals("S"))
 						{
 							System.out.println("Quantos cheques você quer? (Até 3)");
@@ -117,16 +117,13 @@ public class AppConta {
 						else if(r.equals("N")) {
 							System.out.println("Obrigado, até a próxima");
 							break;
-						}
-						
-						
+						}	
 				}
-			
 			}
 			if(corrente == false) {
 			System.out.println(c1.getSaldo());
 			System.out.println("Vc quer uns cheques, meu mano?");
-			r = input.next();
+			r = input.next().toUpperCase();
 				if(r.equals("S"))
 				{
 					System.out.println("Quantos cheques você quer? (Até 3)");
@@ -154,7 +151,7 @@ public class AppConta {
 			System.out.println("Conta poupança");
 			System.out.println("Saldo atual :"+es1.getSaldo()+"\nLimite: "+es1.getLimite());
 			System.out.println("Movimento : D - Debito, C - Credito");
-			r = input.next();
+			r = input.next().toUpperCase();
 			for(int i = 1; i <= 10; i++) {
 				if(r.equals("D")){
 					System.out.println("Quanto deseja debitar?");
@@ -165,7 +162,7 @@ public class AppConta {
 				}
 				System.out.println("Saldo atual :"+es1.getSaldo()+"\nLimite: "+es1.getLimite());
 				System.out.println("Movimento : D - Debito, C - Credito");
-				r = input.next();
+				r = input.next().toUpperCase();
 			}
 		}
 		if (res == 4) {
@@ -176,7 +173,7 @@ public class AppConta {
 			System.out.println("Conta poupança");
 			System.out.println("Saldo atual :"+e1.getSaldo());
 			System.out.println("Movimento : D - Debito, C - Credito, E - Emprestimo");
-			r = input.next();
+			r = input.next().toUpperCase();
 			for(int i = 1; i <= 10; i++) {
 				if(r.equals("D")){
 					if (e1.getSaldo() == 0) {
@@ -195,7 +192,7 @@ public class AppConta {
 				}
 				System.out.println("Saldo atual :"+e1.getSaldo()+" Limite atual: "+ e1.getLimiteEmprestimo());
 				System.out.println("Movimento : D - Debito, C - Credito, E - Emprestimo");
-				r = input.next();
+				r = input.next().toUpperCase();
 			}
 		}
 		if (res == 5) {
@@ -206,7 +203,7 @@ public class AppConta {
 			System.out.println("Conta Estudantil");
 			System.out.println("Saldo atual :"+p1.getSaldo());
 			System.out.println("Movimento : D - Debito, C - Credito, E - Estudantil");
-			r = input.next();
+			r = input.next().toUpperCase();
 			for(int i = 1; i <= 10; i++) {
 				if(r.equals("D")){
 					if (est1.getSaldo() == 0) {
@@ -225,7 +222,7 @@ public class AppConta {
 				}
 				System.out.println("Saldo atual :"+est1.getSaldo()+" Limite atual: "+ est1.getLimiteEstudantil());
 				System.out.println("Movimento : D - Debito, C - Credito, E - Emprestimo");
-				r = input.next();
+				r = input.next().toUpperCase();
 			}
 		}
 	

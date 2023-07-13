@@ -17,10 +17,17 @@ public class Corrente extends Conta {
 	public void pediTalao(int quantTalao) {
 		if(quantTalao <= contadorTalao && quantTalao>0) {
 		this.contadorTalao =- quantTalao;
+		this.debito(30.00 * quantTalao);
+		double x = this.getSaldo();
+		if(x<0) {
 		this.credito(30.00 * quantTalao);
+		System.out.println("Valor inválido");
+		}
+		
 		}
 		else {
 			System.out.println("Digite um valor válido");
 		}
 	}
+
 }

@@ -2,24 +2,16 @@ package app;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class AppLoja {
 
 	public static void main(String[] args) {
 		
-		Scanner leia = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
 		
-		/*Array:
-		String nomes[] =  {"JOAO", "MARIA", "PEDRO"};
-		
-		for(int i = 0; i < nomes.length; i++) {
-			System.out.println(nomes[i]);
-		}
-		
-		nomes[0] = "FELIPE";
-		*/
-		//List: 
+		Scanner input = new Scanner(System.in);
 		List <String> cadastro = new ArrayList<>();
 		
 		cadastro.add("FILIPE");

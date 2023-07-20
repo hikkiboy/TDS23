@@ -6,7 +6,7 @@ public class ConnectionFactory {
 public Connection getConnection() {
 			try {
 				return DriverManager.getConnection
-						("jdbc:sqlserver://localhost:1433;databaseName=loja;user=sa;password=TecInfo"
+						("jdbc:sqlserver://localhost:135;databaseName=loja;user=sa;password=TecInfo"
 						);
 
 			}

@@ -961,3 +961,12 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-20 21:34:47.703
 !MESSAGE Classpath changed for project: blog
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-20 21:36:57.632
+!MESSAGE Classpath changed for project: blog
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-20 21:40:17.394
+!MESSAGE Classpath changed for project: blog
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-20 21:40:37.251
+!MESSAGE Classpath changed for project: blog

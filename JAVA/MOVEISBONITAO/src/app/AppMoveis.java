@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import entities.SeuProduto;
 import entities.mobel;
 
 public class AppMoveis {

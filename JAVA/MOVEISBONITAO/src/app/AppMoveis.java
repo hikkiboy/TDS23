@@ -1,0 +1,90 @@
+package app;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entities.SeuProduto;
+import entities.mobel;
+
+public class AppMoveis {
+	public static List <mobel> list = new ArrayList<>();
+
+	public static void main(String[] args) {
+		Screen();
+
+	}
+	
+	public static void Screen() {
+		Scanner input = new Scanner (System.in);
+		mobel m1 = new mobel ();
+		String cod;
+		String nome;
+		String material;
+		double valor;
+		int estoque;
+		double lucro;
+		System.out.println("Lojas Moveis Bonitão");
+		System.out.println(" ");
+		System.out.println("1 - Incluir Produtos ");
+		System.out.println("2 - Alterar Dados Produtos ");
+		System.out.println("3 - Excluir Dados Produtos ");
+		System.out.println("4 - Comprar Produtos ");
+		System.out.println("5 - Sair ");
+		System.out.print("Qual vc quer?????: ");
+		int res = input.nextInt();
+		if (res == 1) {
+			
+			System.out.println("Insira os dados do produto conforme abaixo: ");
+			System.out.println("Codigo do Movel: ");
+			cod = input.next();
+			m1.setCodigo(cod);
+			System.out.println("Nome do Movel: ");
+			nome = input.next();
+			m1.setNome(nome);
+			System.out.println("Material do Movel: ");
+			material = input.next();
+			m1.setMaterial;
+			System.out.println("Valor do Movel: ");
+			valor = input.nextDouble();
+			System.out.println("Estoque do Movel: ");
+			estoque = input.nextInt();
+			System.out.println("Margem de lucro do Movel: ");
+			lucro = input.nextInt();
+			list.add(new mobel(cod, nome, material, valor, estoque, lucro));
+			
+		}
+			
+		if (res == 2) {
+			
+		}
+		if (res == 3) {
+			
+		}
+		if (res == 4) {
+			for(mobel x : list) {
+				System.out.println(x.toString());
+			}
+			System.out.println("Escreva o codigo do produto desejado: ");
+			cod = input.next();	
+			for(mobel x :list) {
+				if(cod.equals(x.getCodigo())) {
+					System.out.println("Quantos vc deseja ?");
+					
+				}
+				else {
+					System.out.println("invalido");
+				}
+			}
+		
+				
+			}
+		if (res == 5) {
+			
+		}
+		Screen();
+	}
+
+}
+
+

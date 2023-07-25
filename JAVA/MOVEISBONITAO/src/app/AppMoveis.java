@@ -57,10 +57,10 @@ public class AppMoveis {
 		}
 			
 		if (res == 2) {
-			
+			System.out.println("nao implementei foi mal :p");
 		}
 		if (res == 3) {
-			
+			System.out.println("nao implementei foi mal :p");
 		}
 		if (res == 4) {
 			double qnt;

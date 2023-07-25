@@ -44,13 +44,15 @@ public class AppMoveis {
 			m1.setNome(nome);
 			System.out.println("Material do Movel: ");
 			material = input.next();
-			m1.setMaterial;
 			System.out.println("Valor do Movel: ");
 			valor = input.nextDouble();
+			m1.setValor(valor);
 			System.out.println("Estoque do Movel: ");
 			estoque = input.nextInt();
+			m1.incluirEstoque(estoque);
 			System.out.println("Margem de lucro do Movel: ");
 			lucro = input.nextInt();
+			m1.setMargemLucro(lucro);
 			list.add(new mobel(cod, nome, material, valor, estoque, lucro));
 			
 		}
@@ -62,6 +64,8 @@ public class AppMoveis {
 			
 		}
 		if (res == 4) {
+			double qnt;
+			char op = 0;
 			for(mobel x : list) {
 				System.out.println(x.toString());
 			}
@@ -70,10 +74,17 @@ public class AppMoveis {
 			for(mobel x :list) {
 				if(cod.equals(x.getCodigo())) {
 					System.out.println("Quantos vc deseja ?");
-					
-				}
-				else {
-					System.out.println("invalido");
+					qnt = input.nextDouble();
+					System.out.println("O valor final ficou: " + x.valorCompra(qnt));
+					System.out.println("Comprar? : ");
+					op = input.next().charAt(0);
+					if(op == 'S') {
+						System.out.println("vlw eh nois");
+						x.tirarEstoque(qnt);
+					}
+					else {
+						System.out.println("xau");
+					}
 				}
 			}
 		

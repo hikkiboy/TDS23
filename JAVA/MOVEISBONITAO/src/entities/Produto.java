@@ -71,9 +71,9 @@ abstract class Produto  {
 		}
 	}
 	
-	public void tirarEstoque(int subtrairEstoque) {
-		if(subtrairEstoque > 0 && subtrairEstoque < this.estoque) {
-			this.estoque = this.estoque - subtrairEstoque;
+	public void tirarEstoque(double qnt) {
+		if(qnt > 0 && qnt < this.estoque) {
+			this.estoque = (int) (this.estoque - qnt);
 		}
 		else {
 			System.out.println("invalido");

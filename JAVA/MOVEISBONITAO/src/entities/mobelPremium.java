@@ -11,7 +11,7 @@ public class mobelPremium extends mobel {
 	}
 
 	public mobelPremium(String codigo, String nome, double valor, int estoque, double margemLucro) {
-		super(codigo, nome, valor, estoque, margemLucro);
+		super(codigo, nome, nome, valor, estoque, margemLucro);
 	}
 
 	public double getAdicionalPremium() {

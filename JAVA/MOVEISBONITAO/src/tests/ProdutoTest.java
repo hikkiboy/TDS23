@@ -1,17 +1,16 @@
 package tests;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import entities.SeuProduto;
+
+import entities.mobel;
 
 class ProdutoTest {
 
 	@Test
 	void testValorCompra() {
-		SeuProduto p1 = new SeuProduto("1", "nome", 10, 10, 1);
+		mobel p1 = new mobel("1", "nome", null, 10, 10, 1);
 		p1.valorCompra(-1);
 		Assertions.assertEquals(0, 0);
 		p1.valorCompra(0);
@@ -20,7 +19,7 @@ class ProdutoTest {
 
 	@Test
 	void testIncluirEstoque() {
-		SeuProduto p1 = new SeuProduto("1", "nome", 10, 10, 1);
+		mobel p1 = new mobel("1", "nome", null, 10, 10, 1);
 		p1.valorCompra(-1);
 		Assertions.assertEquals(10, p1.getEstoque());
 		p1.valorCompra(0);
@@ -29,7 +28,7 @@ class ProdutoTest {
 
 	@Test
 	void testTirarEstoque() {
-		SeuProduto p1 = new SeuProduto("1", "nome", 10, 10, 1);
+		mobel p1 = new mobel("1", "nome", null, 10, 10, 1);
 		p1.valorCompra(-1);
 		Assertions.assertEquals(10, p1.getEstoque());
 		p1.valorCompra(0);

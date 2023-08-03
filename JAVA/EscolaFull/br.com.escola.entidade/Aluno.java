@@ -13,7 +13,6 @@ public class Aluno {
 		
 	}
 	public Aluno(Long matricula, String nome, String telefone, String email, Date dataCadastro) {
-		super();
 		this.matricula = matricula;
 		this.nome = nome;
 		this.telefone = telefone;

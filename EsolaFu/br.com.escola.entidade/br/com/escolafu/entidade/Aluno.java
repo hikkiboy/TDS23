@@ -1,3 +1,5 @@
+package br.com.escolafu.entidade;
+
 import java.util.Date;
 
 public class Aluno {
@@ -5,14 +7,14 @@ public class Aluno {
 	
 	private Long matricula;
 	private String nome;
-	private String telefone;
+	private int telefone;
 	private String email;
 	private Date dataCadastro;
 	
 	public Aluno() {
 		
 	}
-	public Aluno(Long matricula, String nome, String telefone, String email, Date dataCadastro) {
+	public Aluno(Long matricula, String nome, int telefone, String email, Date dataCadastro) {
 		this.matricula = matricula;
 		this.nome = nome;
 		this.telefone = telefone;
@@ -34,8 +36,8 @@ public class Aluno {
 	public String getTelefone() {
 		return telefone;
 	}
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+	public void setTelefone(int i) {
+		this.telefone = i;
 	}
 	public String getEmail() {
 		return email;

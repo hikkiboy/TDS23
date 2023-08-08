@@ -29,10 +29,12 @@
       </nav>
 <div class="bg-img"> </div>
 <div class = "container">  
-<form action = "POST" action = "alunoServlet" >
-      <h1>Cadastro de aluno</h1>
+<form action = "GET" action = "alunoServlet" >
+      <h1>Consultar aluno</h1>
   		
-  	
+  		   <label for="nome"><b>Matricula</b></label>
+       <input type="text" name="Nome" id = "nome" value = "${aluno.matricula}" placeholder="Insira o nome" required>
+	  	
       <label for="nome"><b>Nome</b></label>
        <input type="text" name="Nome" id = "nome" value = "${aluno.nome}" placeholder="Insira o nome" required>
       
@@ -42,9 +44,8 @@
       <label for="telefone"><b>Telefone</b></label>
        <input type="text" name="Telefone" id = "telefone" value = "${aluno.telefone}" placeholder="Insira o telefone" required>	
       
-       <label for="nome"><b>Data</b></label>
-       <input type="text" name="Data" id = "Data" value = "${aluno.data}" placeholder="Insira a data" required>	
+ 
   
-      <button type="submit" class="btn">Cadastrar</button>
+      <button type="submit" class="btn">Consultar</button>
     </form>
   </div> 

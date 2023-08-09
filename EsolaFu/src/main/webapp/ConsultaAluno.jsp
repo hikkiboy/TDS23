@@ -33,17 +33,18 @@
       <h1>Consultar aluno</h1>
   		
   		   <label for="nome"><b>Matricula</b></label>
-       <input type="text" name="Nome" id = "nome" value = "${aluno.matricula}" placeholder="Insira o nome" required>
+       <input type="text" name="Nome" id = "nome" value = "${aluno.matricula}" placeholder="Insira a matricula" required>
 	  	
-      <label for="nome"><b>Nome</b></label>
-       <input type="text" name="Nome" id = "nome" value = "${aluno.nome}" placeholder="Insira o nome" required>
-      
-      <label for="email"><b>Email</b></label>
-       <input type="text" name="Email" id = "Email" value = "${aluno.email}" placeholder="Insira o Email" required>	
-  
-      <label for="telefone"><b>Telefone</b></label>
-       <input type="text" name="Telefone" id = "telefone" value = "${aluno.telefone}" placeholder="Insira o telefone" required>	
-      
+     <table class = "table">
+  <tr>
+    <th>Nome</th>
+    <th>Telefone</th>
+    <th>Email</th>
+    <th>Data</th>
+  </tr>
+  <tr>
+   
+</table>
  
   
       <button type="submit" class="btn">Consultar</button>

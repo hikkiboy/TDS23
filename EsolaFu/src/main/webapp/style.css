@@ -75,3 +75,10 @@ body, html {
   nav{
 	  z-index: 100;
   }
+  td, th {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 8px;
+
+}

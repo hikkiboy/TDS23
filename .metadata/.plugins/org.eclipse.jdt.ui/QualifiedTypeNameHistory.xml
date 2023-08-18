@@ -2,4 +2,7 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="br.com.biblioteca.itens.Cd"/>
+    <fullyQualifiedTypeName name="br.com.biblioteca.DAOs.LivroDao"/>
+    <fullyQualifiedTypeName name="br.com.biblioteca.itens.Livro"/>
 </qualifiedTypeNameHistroy>

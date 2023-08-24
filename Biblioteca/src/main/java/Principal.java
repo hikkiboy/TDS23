@@ -16,6 +16,7 @@ public class Principal {
         LivroDao livrodao;
         boolean menu = true;
         int op = 0;
+        int op2 = 0;
         do{
             System.out.println(" BIBLIOTECA USANDO bANCO sql SERVER ");
             System.out.println("1 - Cadastrar");
@@ -32,7 +33,7 @@ public class Principal {
                     System.out.println("2 - Livros");
                     System.out.println("Digite a opção desejada");
                     
-                    if(op==1){
+                    if(op2==1){
                         cd = new Cd();
                         cddao = new CdDAO();
                         System.out.println("Cadastro de CD");
@@ -46,7 +47,7 @@ public class Principal {
                         cd.setGravadora(en.next());
                         
                         cddao.inserirCd(cd);
-                    }else if(op==2){
+                    }else if(op2==2){
                         livro = new Livro();
                         livrodao = new LivroDao();
                         System.out.println("Cadastro de Livro");
@@ -70,7 +71,7 @@ public class Principal {
                     System.out.println("2 - Livros");
                     System.out.println("Digite a Opção desejada");
                     op = en.nextInt();
-                    if(op==1){
+                    if(op2==1){
                         cd = new Cd();
                         cddao = new CdDAO();
                         List<Cd> cds = new ArrayList<Cd>();
@@ -81,7 +82,7 @@ public class Principal {
                             System.out.println("\n"+cds.get(i).toString());
                         }     
                  }
-                    else if(op==2) {
+                    else if(op2==2) {
                     	livro = new Livro();
                     	livrodao = new LivroDao();
                     	List<Livro> livros = new ArrayList<Livro>();
@@ -103,7 +104,7 @@ public class Principal {
                     System.out.println("2 - Livros");
                     System.out.println("Digite a opção desejada");
                     
-                    if(op==1){
+                    if(op2==1){
                         cd = new Cd();
                         cddao = new CdDAO();
                         System.out.println("alterar CD");
@@ -119,7 +120,7 @@ public class Principal {
                         cd.setGravadora(en.next());
                         
                         cddao.inserirCd(cd);
-                    }else if(op==2){
+                    }else if(op2==2){
                         livro = new Livro();
                         livrodao = new LivroDao();
                         System.out.println("Alterar Livro");
@@ -147,7 +148,7 @@ public class Principal {
                 	System.out.print("Digite a Opção : ");
                 	op = en.nextInt();
 
-                	if (op == 1) {
+                	if (op2 == 1) {
                 	cd = new Cd();
                 	cddao = new CdDAO();
                 	List<Cd> cds = new ArrayList<Cd>();
@@ -163,7 +164,7 @@ public class Principal {
                 	.println("\nNão foi possível encontrar um cd com esse código\ntente outro.\n");
                 	}
 
-                	} else if (op == 2) {
+                	} else if (op2 == 2) {
                 	livro = new Livro();
                 	livrodao = new LivroDao();
                 	List<Livro> livros = new ArrayList<Livro>();

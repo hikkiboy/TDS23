@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>User form</title>
+<title>Edit form</title>
 </head>
 <body>
 <header>
@@ -28,20 +28,13 @@ class = "nav-link">Usuarios</a><li>
 <div class = "caontainer col-md-5">
 <div class = "card">
 <div class= "card-body">
-	<form action="UserServlet" Method = "Post">
 	<c:if test="${usuario != null }">
-		<form action = "update" method = "post">
-	</c:if>
-	<c:if test="${usuario == null }">
-		<form action = "insert" method= "post">
+		<form action = "updateServlet" method = "post">
 	</c:if>
 <caption>
 	<h2>
 		<c:if test "${usuario != null }">
 			Edit User
-		</c:if>
-		<c:if test "${usuario == null }">
-			Add new user
 		</c:if>
 	</h2>
 </caption>
@@ -66,7 +59,7 @@ class = "nav-link">Usuarios</a><li>
 	name = "name" required = "required">
 </fieldset>
 
-<button type = "submit" class = "btn btn-success">Salvar</button>
+<button type = "submit" class = "btn btn-success">Editar user</button>
 </form>
 
 </div>
